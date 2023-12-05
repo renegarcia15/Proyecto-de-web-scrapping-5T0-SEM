@@ -62,6 +62,44 @@ def dashboard01():
             dbc.Col(dcc.Graph(id="grafica-por-pais"))
         ]),
 
+        dbc.Row([
+            dbc.Col([
+                dcc.Dropdown(
+                    id="dropdown-nombres-valores",
+                    options=[
+                        {"label": "Jugadores Caros", "value": "caros"},
+                        {"label": "Jugadores Baratos", "value": "baratos"}
+                    ],
+                    value="caros",
+                    multi=False,
+                    placeholder="Selecciona tipo de jugadores"
+                ),
+            ], width=6),
+            dbc.Col(dcc.Graph(id="grafica-jugadores"))
+        ]),
+        dbc.Row([
+            dbc.Col([
+                dcc.Dropdown(
+                    id="dropdown-posiciones",
+                    options=[{"label": posicion, "value": posicion} for posicion in df["posicion"].unique()],
+                    value=None,
+                    multi=False,
+                    placeholder="Selecciona posición"
+                ),
+            ], width=6),
+            dbc.Col(dcc.Graph(id="grafica-jugadores-posicion", figure=jugadores_posicion))
+        ]),
+    ])
+
+def dashboard02():
+    eq = cnst.CONSULTA_EQUIPOS
+    val = cnst.CONSULTA_VALORES
+    df_jugador, df_valores = conexion.obtener_datos(eq, val)
+    df_d2 = pd.merge(df_jugador, df_valores)
+    mejores_equipos = df_d2.groupby("equipo")["valor_mercado_millones"].sum().nlargest(10).reset_index()
+    graf_mejores = px.bar(mejores_equipos, x="equipo", y="valor_mercado_millones",
+                          title="Top 10 Equipos con el mejor valor del mercado").update_layout(yaxis_title="Valor en el mercado")
+
 
 if __name__ == "__main__":
     app.run_server(debug=True)
