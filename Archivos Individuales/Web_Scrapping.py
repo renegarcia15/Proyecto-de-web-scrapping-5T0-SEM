@@ -5,6 +5,7 @@ from selenium.webdriver.common.by import By
 from webdriver_manager.chrome import ChromeDriverManager
 import time
 import CONSTANTES as cnst
+import pandas as pd
 
 s = Service(ChromeDriverManager().install())
 opc = Options()
@@ -38,3 +39,17 @@ try:
                 "Nacionalidad": nacionalidad_texto,
                 "Equipo": equipo_texto
             })
+        if page < 8:
+            next_page_button = navegador.find_element(By.XPATH, "//a[@title='A la página siguiente']")
+            next_page_button.click()
+            time.sleep(5)
+except Exception as e:
+    print(f"Error: {e}")
+finally:
+    navegador.quit()
+
+campos = cnst.CAMPOS
+data = pd.DataFrame(datos)
+jugadores = data.to_csv(cnst.JUGADORES)
+
+print(f"Los datos se han guardado en {cnst.JUGADORES}")
