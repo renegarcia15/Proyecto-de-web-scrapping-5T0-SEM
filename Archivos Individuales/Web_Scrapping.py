@@ -5,7 +5,6 @@ from selenium.webdriver.common.by import By
 from webdriver_manager.chrome import ChromeDriverManager
 import time
 import CONSTANTES as cnst
-import pandas as pd
 
 s = Service(ChromeDriverManager().install())
 opc = Options()
