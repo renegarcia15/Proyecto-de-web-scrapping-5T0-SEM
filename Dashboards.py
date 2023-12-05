@@ -102,14 +102,14 @@ def dashboard02():
     peores_equipos = df_d2.groupby("equipo")["valor_mercado_millones"].sum().nsmallest(5).reset_index()
 
 
-graf_peores = px.pie(peores_equipos, names="equipo", values="valor_mercado_millones",
+    graf_peores = px.pie(peores_equipos, names="equipo", values="valor_mercado_millones",
                      title="Top 10 Equipos con el peor valor en el mercado")
-return dbc.Container([
-    dbc.Row([html.P(
+    return dbc.Container([
+        dbc.Row([html.P(
         "Objetivos: Mostrar los equipos con más jugadores, la cantidad de jugadores por equipo y qué equipo tiene a más jugadores en el top 50")]),
-    dbc.Row([
-        dbc.Col([
-            dcc.Dropdown(
+        dbc.Row([
+            dbc.Col([
+                dcc.Dropdown(
                 id="dropdown-equipos",
                 options=[{"label": equipo, "value": equipo} for equipo in df_d2["equipo"].unique()],
                 value=None,
