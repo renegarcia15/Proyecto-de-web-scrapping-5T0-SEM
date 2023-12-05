@@ -154,6 +154,41 @@ def act_graficaPais(selected_pais):
     figure = px.bar(filtered_df, x="nacionalidad", title="Jugadores por País").update_layout(
         yaxis_title="Cantidad de jugadores")
     return figure
+@app.callback(
+    Output("grafica-jugadores", "figure"),
+    [Input("dropdown-nombres-valores", "value")]
+)
+def act_graficaJugador(selected_tipo):
+    query = cnst.CONSULTA_JUGADOR
+    query2 = cnst.CONSULTA_VALORES
+    df_jugador, df_valores = conexion.obtener_datos(query, query2)
+    df = pd.merge(df_jugador, df_valores)
+    if selected_tipo == "caros":
+        filtered_df = df.nlargest(10, "valor_mercado_millones")
+    elif selected_tipo == "baratos":
+        filtered_df = df.nsmallest(10, "valor_mercado_millones")
+    else:
+        filtered_df = df
 
+    figure = px.bar(filtered_df, x="nombre", y="valor_mercado_millones", title=f"Jugadores {selected_tipo.capitalize()}").update_layout(yaxis_title="Valor en el mercado")
+    return figure
+
+@app.callback(
+    Output("grafica-jugadores-posicion", "figure"),
+    [Input("dropdown-posiciones", "value")]
+)
+def act_graficaJugador_posicion(selected_posicion):
+    query = cnst.CONSULTA_JUGADOR
+    query2 = cnst.CONSULTA_VALORES
+    df_jugador, df_valores = conexion.obtener_datos(query, query2)
+    df = pd.merge(df_jugador, df_valores)
+    if not selected_posicion:
+        filtered_df = df
+    else:
+        filtered_df = df[df["posicion"] == selected_posicion]
+
+    figure = px.line(filtered_df, x="nombre", y="valor_mercado_millones",
+                          title=f"Valor en el mercado por posicion").update_layout(yaxis_title="Valor en el mercado")
+    return figure
 if __name__ == "__main__":
     app.run_server(debug=True)
