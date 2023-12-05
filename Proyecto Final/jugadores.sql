@@ -21,4 +21,4 @@ select * from jugador;
 select * from equipos;
 select * from valores;
 
-drop database jugadores
+drop database jugadores;
