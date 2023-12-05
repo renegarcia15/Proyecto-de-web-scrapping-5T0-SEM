@@ -1,0 +1,226 @@
+,Posicion,Nombre,Edad,Valor de mercado,Nacionalidad,Equipo
+0,Delantero centro,Erling Haaland,23,18000,Noruega,Manchester City
+1,Extremo izquierdo,Kylian Mbappé,24,18000,Francia,París Saint-Germain FC
+2,Mediocentro ofensivo,Jude Bellingham,20,15000,Inglaterra,Real Madrid CF
+3,Extremo izquierdo,Vinicius Junior,23,15000,Brasil,Real Madrid CF
+4,Extremo derecho,Bukayo Saka,22,12000,Inglaterra,Arsenal FC
+5,Delantero centro,Victor Osimhen,24,12000,Nigeria,SSC Nápoles
+6,Mediocentro ofensivo,Jamal Musiala,20,11000,Alemania,Bayern Múnich
+7,Extremo izquierdo,Phil Foden,23,11000,Inglaterra,Manchester City
+8,Delantero centro,Harry Kane,30,11000,Inglaterra,Bayern Múnich
+9,Mediocentro,Pedri,21,10000,España,FC Barcelona
+10,Extremo derecho,Rodrygo,22,10000,Brasil,Real Madrid CF
+11,Delantero centro,Lautaro Martínez,26,10000,Argentina,Inter de Milán
+12,Mediocentro,Federico Valverde,25,10000,Uruguay,Real Madrid CF
+13,Pivote,Declan Rice,24,10000,Inglaterra,Arsenal FC
+14,Pivote,Rodri,27,10000,España,Manchester City
+15,Pivote,Moisés Caicedo,22,9000,Ecuador,Chelsea FC
+16,Mediocentro,Gavi,19,9000,España,FC Barcelona
+17,Mediocentro,Eduardo Camavinga,21,9000,Francia,Real Madrid CF
+18,Pivote,Aurélien Tchouaméni,23,9000,Francia,Real Madrid CF
+19,Extremo izquierdo,Rafael Leão,24,9000,Portugal,AC Milan
+20,Mediocentro,Frenkie de Jong,26,9000,Países Bajos,FC Barcelona
+21,Mediocentro ofensivo,Martin Ødegaard,24,9000,Noruega,Arsenal FC
+22,Mediocentro ofensivo,Florian Wirtz,20,8500,Alemania,Bayer 04 Leverkusen
+23,Pivote,Bruno Guimarães,26,8500,Brasil,Newcastle United
+24,Extremo izquierdo,Khvicha Kvaratskhelia,22,8500,Georgia,SSC Nápoles
+25,Extremo izquierdo,Gabriel Martinelli,22,8000,Brasil,Arsenal FC
+26,Mediocentro,Enzo Fernández,22,8000,Argentina,Chelsea FC
+27,Delantero centro,Julián Álvarez,23,8000,Argentina,Manchester City
+28,Delantero centro,Randal Kolo Muani,24,8000,Francia,París Saint-Germain FC
+29,Defensa central,Josko Gvardiol,21,8000,Croacia,Manchester City
+30,Mediocentro ofensivo,Christopher Nkunku,26,8000,Francia,Chelsea FC
+31,Defensa central,Rúben Dias,26,8000,Portugal,Manchester City
+32,Mediocentro ofensivo,Bernardo Silva,29,8000,Portugal,Manchester City
+33,Extremo izquierdo,Luis Díaz,26,7500,Colombia,Liverpool FC
+34,Delantero centro,Gabriel Jesus,26,7500,Brasil,Arsenal FC
+35,Extremo izquierdo,Marcus Rashford,26,7500,Inglaterra,Manchester United
+36,Mediocentro,Nicolò Barella,26,7500,Italia,Inter de Milán
+37,Mediocentro ofensivo,Bruno Fernandes,29,7500,Portugal,Manchester United
+38,Extremo izquierdo,Jack Grealish,28,7500,Inglaterra,Manchester City
+39,Extremo derecho,Leroy Sané,27,7500,Alemania,Bayern Múnich
+40,Pivote,Joshua Kimmich,28,7500,Alemania,Bayern Múnich
+41,Extremo derecho,Xavi Simons,20,7000,Países Bajos,RB Leipzig
+42,Defensa central,William Saliba,22,7000,Francia,Arsenal FC
+43,Defensa central,Ronald Araújo,24,7000,Uruguay,FC Barcelona
+44,Mediocentro,Dominik Szoboszlai,23,7000,Hungría,Liverpool FC
+45,Lateral izquierdo,Alphonso Davies,23,7000,Canadá,Bayern Múnich
+46,Defensa central,Éder Militão,25,7000,Brasil,Real Madrid CF
+47,Delantero centro,Dušan Vlahović,23,7000,Serbia,Juventus de Turín
+48,Delantero centro,Alexander Isak,24,7000,Suecia,Newcastle United
+49,Defensa central,Matthijs de Ligt,24,7000,Países Bajos,Bayern Múnich
+50,Mediocentro ofensivo,James Maddison,27,7000,Inglaterra,Tottenham Hotspur
+51,Mediocentro ofensivo,Kevin De Bruyne,32,7000,Bélgica,Manchester City
+52,Delantero centro,Evan Ferguson,19,6500,Irlanda,Brighton & Hove Albion
+53,Lateral izquierdo,Nuno Mendes,21,6500,Portugal,París Saint-Germain FC
+54,Delantero centro,Rasmus Højlund,20,6500,Dinamarca,Manchester United
+55,Delantero centro,Darwin Núñez,24,6500,Uruguay,Liverpool FC
+56,Mediocentro,Alexis Mac Allister,24,6500,Argentina,Liverpool FC
+57,Mediocentro ofensivo,Lucas Paquetá,26,6500,Brasil,West Ham United
+58,Lateral derecho,Achraf Hakimi,25,6500,Marruecos,París Saint-Germain FC
+59,Lateral derecho,Trent Alexander-Arnold,25,6500,Inglaterra,Liverpool FC
+60,Extremo izquierdo,Kingsley Coman,27,6500,Francia,Bayern Múnich
+61,Defensa central,Marquinhos,29,6500,Brasil,París Saint-Germain FC
+62,Extremo derecho,Mohamed Salah,31,6500,Egipto,Liverpool FC
+63,Delantero centro,Jonathan David,23,6000,Canadá,LOSC Lille
+64,Defensa central,Min-jae Kim,27,6000,Corea del Sur,Bayern Múnich
+65,Extremo izquierdo,Jérémy Doku,21,6000,Bélgica,Manchester City
+66,Defensa central,Jules Koundé,25,6000,Francia,FC Barcelona
+67,Extremo derecho,Raphinha,26,6000,Brasil,FC Barcelona
+68,Pivote,Sandro Tonali,23,6000,Italia,Newcastle United
+69,Defensa central,Cristian Romero,25,6000,Argentina,Tottenham Hotspur
+70,Mediocentro ofensivo,Mason Mount,24,6000,Inglaterra,Manchester United
+71,Defensa central,Dayot Upamecano,25,6000,Francia,Bayern Múnich
+72,Lateral izquierdo,Theo Hernández,26,6000,Francia,AC Milan
+73,Defensa central,Alessandro Bastoni,24,6000,Italia,Inter de Milán
+74,Mediocentro ofensivo,Kai Havertz,24,6000,Alemania,Arsenal FC
+75,Extremo derecho,Ousmane Dembélé,26,6000,Francia,París Saint-Germain FC
+76,Mediocentro,Matheus Nunes,25,5500,Portugal,Manchester City
+77,Pivote,Manuel Ugarte,22,5500,Uruguay,París Saint-Germain FC
+78,Lateral derecho,Reece James,23,5500,Inglaterra,Chelsea FC
+79,Mediocentro,Douglas Luiz,25,5500,Brasil,Aston Villa
+80,Defensa central,Gabriel Magalhães,25,5500,Brasil,Arsenal FC
+81,Delantero centro,Cody Gakpo,24,5500,Países Bajos,Liverpool FC
+82,Extremo derecho,Moussa Diaby,24,5500,Francia,Aston Villa
+83,Lateral derecho,Ben White,26,5500,Inglaterra,Arsenal FC
+84,Delantero centro,Ollie Watkins,27,5500,Inglaterra,Aston Villa
+85,Pivote,João Palhinha,28,5500,Portugal,Fulham FC
+86,Extremo derecho,Serge Gnabry,28,5500,Alemania,Bayern Múnich
+87,Extremo derecho,Lamine Yamal,16,5000,España,FC Barcelona
+88,Mediocentro,Warren Zaïre-Emery,17,5000,Francia,París Saint-Germain FC
+89,Delantero centro,Mathys Tel,18,5000,Francia,Bayern Múnich
+90,Lateral izquierdo,Alejandro Balde,20,5000,España,FC Barcelona
+91,Pivote,Roméo Lavia,19,5000,Bélgica,Chelsea FC
+92,Extremo derecho,Antony,23,5000,Brasil,Manchester United
+93,Extremo derecho,Michael Olise,21,5000,Francia,Crystal Palace
+94,Delantero centro,Gonçalo Ramos,22,5000,Portugal,París Saint-Germain FC
+95,Extremo izquierdo,Kaoru Mitoma,26,5000,Japón,Brighton & Hove Albion
+96,Pivote,Amadou Onana,22,5000,Bélgica,Everton FC
+97,Defensa central,Lisandro Martínez,25,5000,Argentina,Manchester United
+98,Extremo izquierdo,João Félix,24,5000,Portugal,FC Barcelona
+99,Extremo derecho,Dejan Kulusevski,23,5000,Suecia,Tottenham Hotspur
+100,Lateral derecho,Nahuel Molina,25,5000,Argentina,Atlético de Madrid
+101,Extremo derecho,Takefusa Kubo,22,5000,Japón,Real Sociedad
+102,Extremo izquierdo,Diogo Jota,26,5000,Portugal,Liverpool FC
+103,Mediocentro,Mikel Merino,27,5000,España,Real Sociedad
+104,Mediocentro ofensivo,Dani Olmo,25,5000,España,RB Leipzig
+105,Defensa central,Milan Skriniar,28,5000,Eslovaquia,París Saint-Germain FC
+106,Lateral derecho,João Cancelo,29,5000,Portugal,FC Barcelona
+107,Extremo izquierdo,Raheem Sterling,28,5000,Inglaterra,Chelsea FC
+108,Delantero centro,Heung-min Son,31,5000,Corea del Sur,Tottenham Hotspur
+109,Extremo izquierdo,Neymar,31,5000,Brasil,Al-Hilal SFC
+110,Mediocentro ofensivo,Eberechi Eze,25,4800,Inglaterra,Crystal Palace
+111,Extremo derecho,Brennan Johnson,22,4800,Gales,Tottenham Hotspur
+112,Extremo derecho,Jarrod Bowen,26,4800,Inglaterra,West Ham United
+113,Defensa central,António Silva,20,4500,Portugal,SL Benfica
+114,Extremo izquierdo,Mykhaylo Mudryk,22,4500,Ucrania,Chelsea FC
+115,Extremo izquierdo,Anthony Gordon,22,4500,Inglaterra,Newcastle United
+116,Mediocentro,Vitinha,23,4500,Portugal,París Saint-Germain FC
+117,Lateral derecho,Jeremie Frimpong,22,4500,Países Bajos,Bayer 04 Leverkusen
+118,Defensa central,Pau Torres,26,4500,España,Aston Villa
+119,Delantero centro,Loïs Openda,23,4500,Bélgica,RB Leipzig
+120,Defensa central,Sven Botman,23,4500,Países Bajos,Newcastle United
+121,Portero,Diogo Costa,24,4500,Portugal,FC Oporto
+122,Extremo izquierdo,Federico Chiesa,26,4500,Italia,Juventus de Turín
+123,Portero,Gianluigi Donnarumma,24,4500,Italia,París Saint-Germain FC
+124,Defensa central,Lucas Hernández,27,4500,Francia,París Saint-Germain FC
+125,Lateral izquierdo,Federico Dimarco,26,4500,Italia,Inter de Milán
+126,Portero,Mike Maignan,28,4500,Francia,AC Milan
+127,Mediocentro,Leon Goretzka,28,4500,Alemania,Bayern Múnich
+128,Portero,Thibaut Courtois,31,4500,Bélgica,Real Madrid CF
+129,Defensa central,Levi Colwill,20,4200,Inglaterra,Chelsea FC
+130,Mediocentro,Jacob Ramsey,22,4200,Inglaterra,Aston Villa
+131,Defensa central,Jurrien Timber,22,4200,Países Bajos,Arsenal FC
+132,Mediocentro,Joelinton,27,4200,Brasil,Newcastle United
+133,Lateral izquierdo,Oleksandr Zinchenko,26,4200,Ucrania,Arsenal FC
+134,Lateral izquierdo,Luke Shaw,28,4200,Inglaterra,Manchester United
+135,Defensa central,Nathan Aké,28,4200,Países Bajos,Manchester City
+136,Extremo izquierdo,Nico Williams,21,4000,España,Athletic Club
+137,Delantero centro,Elye Wahi,20,4000,Francia,RC Lens
+138,Delantero centro,Victor Boniface,22,4000,Nigeria,Bayer 04 Leverkusen
+139,Mediocentro,Manu Koné,22,4000,Francia,Borussia Mönchengladbach
+140,Defensa central,Giorgio Scalvini,19,4000,Italia,Atalanta de Bérgamo
+141,Defensa central,Edmond Tapsoba,24,4000,Burkina Faso,Bayer 04 Leverkusen
+142,Defensa central,Micky van de Ven,22,4000,Países Bajos,Tottenham Hotspur
+143,Lateral derecho,Pedro Porro,24,4000,España,Tottenham Hotspur
+144,Delantero centro,Santiago Gimenez,22,4000,México,Feyenoord Rotterdam
+145,Mediocentro ofensivo,Mohammed Kudus,23,4000,Ghana,West Ham United
+146,Defensa central,Bremer,26,4000,Brasil,Juventus de Turín
+147,Mediocentro,Conor Gallagher,23,4000,Inglaterra,Chelsea FC
+148,Defensa central,Wesley Fofana,22,4000,Francia,Chelsea FC
+149,Mediocentro,Khéphren Thuram,22,4000,Francia,OGC Niza
+150,Defensa central,Benoît Badiashile,22,4000,Francia,Chelsea FC
+151,Mediocentro ofensivo,Morgan Gibbs-White,23,4000,Inglaterra,Nottingham Forest
+152,Pivote,Martín Zubimendi,24,4000,España,Real Sociedad
+153,Defensa central,Nico Schlotterbeck,23,4000,Alemania,Borussia Dortmund
+154,Defensa central,Axel Disasi,25,4000,Francia,Chelsea FC
+155,Delantero centro,Richarlison,26,4000,Brasil,Tottenham Hotspur
+156,Lateral derecho,Diogo Dalot,24,4000,Portugal,Manchester United
+157,Mediocentro,Rodrigo Bentancur,26,4000,Uruguay,Tottenham Hotspur
+158,Mediocentro,Frank Anguissa,28,4000,Camerún,SSC Nápoles
+159,Defensa central,Benjamin Pavard,27,4000,Francia,Inter de Milán
+160,Extremo izquierdo,Mikel Oyarzabal,26,4000,España,Real Sociedad
+161,Delantero centro,Marcus Thuram,26,4000,Francia,Inter de Milán
+162,Defensa central,Fikayo Tomori,25,4000,Inglaterra,AC Milan
+163,Delantero centro,Serhou Guirassy,27,4000,Guinea,VfB Stuttgart
+164,Mediocentro,Sergej Milinkovic-Savic,28,4000,Serbia,Al-Hilal SFC
+165,Mediocentro,Rodrigo de Paul,29,4000,Argentina,Atlético de Madrid
+166,Portero,Ederson,30,4000,Brasil,Manchester City
+167,Lateral izquierdo,Andrew Robertson,29,4000,Escocia,Liverpool FC
+168,Portero,André Onana,27,4000,Camerún,Manchester United
+169,Pivote,Rúben Neves,26,4000,Portugal,Al-Hilal SFC
+170,Defensa central,Andreas Christensen,27,4000,Dinamarca,FC Barcelona
+171,Pivote,Stanislav Lobotka,29,4000,Eslovaquia,SSC Nápoles
+172,Mediocentro ofensivo,Julian Brandt,27,4000,Alemania,Borussia Dortmund
+173,Defensa central,John Stones,29,4000,Inglaterra,Manchester City
+174,Mediocentro,Adrien Rabiot,28,4000,Francia,Juventus de Turín
+175,Pivote,Hakan Çalhanoğlu,29,4000,Turquía,Inter de Milán
+176,Delantero centro,Romelu Lukaku,30,4000,Bélgica,AS Roma
+177,Defensa central,David Alaba,31,4000,Austria,Real Madrid CF
+178,Pivote,Casemiro,31,4000,Brasil,Manchester United
+179,Lateral izquierdo,Destiny Udogie,21,3800,Italia,Tottenham Hotspur
+180,Defensa central,Ibrahima Konaté,24,3800,Francia,Liverpool FC
+181,Pivote,Ismaël Bennacer,25,3800,Argelia,AC Milan
+182,Mediocentro,Joe Willock,24,3800,Inglaterra,Newcastle United
+183,Defensa central,Manuel Akanji,28,3800,Suiza,Manchester City
+184,Pivote,Fabinho,30,3800,Brasil,Al-Ittihad Club
+185,Mediocentro,James Ward-Prowse,29,3800,Inglaterra,West Ham United
+186,Mediocentro,Mateo Kovacic,29,3800,Croacia,Manchester City
+187,Delantero centro,Nicolas Jackson,22,3500,Senegal,Chelsea FC
+188,Extremo derecho,Bradley Barcola,21,3500,Francia,París Saint-Germain FC
+189,Defensa central,Mohamed Simakan,23,3500,Francia,RB Leipzig
+190,Defensa central,Piero Hincapié,21,3500,Ecuador,Bayer 04 Leverkusen
+191,Defensa central,Castello Lukeba,20,3500,Francia,RB Leipzig
+192,Mediocentro,Pape Matar Sarr,21,3500,Senegal,Tottenham Hotspur
+193,Extremo derecho,Yéremy Pino,21,3500,España,Villarreal CF
+194,Mediocentro ofensivo,Harvey Elliott,20,3500,Inglaterra,Liverpool FC
+195,Pivote,Cheick Doucouré,23,3500,Malí,Crystal Palace
+196,Defensa central,Max Kilman,26,3500,Inglaterra,Wolverhampton Wanderers
+197,Extremo izquierdo,Karim Adeyemi,21,3500,Alemania,Borussia Dortmund
+198,Extremo derecho,Nicolás González,25,3500,Argentina,Fiorentina
+199,Mediocentro,Ryan Gravenberch,21,3500,Países Bajos,Liverpool FC
+200,Extremo izquierdo,Ansu Fati,21,3500,España,Brighton & Hove Albion
+201,Mediocentro,Orkun Kökçü,22,3500,Turquía,SL Benfica
+202,Mediocentro,Nicolò Fagioli,22,3500,Italia,Juventus de Turín
+203,Lateral derecho,Lutsharel Geertruida,23,3500,Países Bajos,Feyenoord Rotterdam
+204,Extremo izquierdo,Amine Gouiri,23,3500,Argelia,Stade Rennais FC
+205,Extremo derecho,Bryan Mbeumo,24,3500,Camerún,Brentford FC
+206,Mediapunta,Giacomo Raspadori,23,3500,Italia,SSC Nápoles
+207,Mediocentro,Exequiel Palacios,25,3500,Argentina,Bayer 04 Leverkusen
+208,Pivote,Edson Álvarez,26,3500,México,West Ham United
+209,Extremo derecho,Ferran Torres,23,3500,España,FC Barcelona
+210,Extremo izquierdo,Harvey Barnes,25,3500,Inglaterra,Newcastle United
+211,Defensa central,Marc Guéhi,23,3500,Inglaterra,Crystal Palace
+212,Pivote,Ibrahim Sangaré,25,3500,Costa de Marfil,Nottingham Forest
+213,Defensa central,Nayef Aguerd,27,3500,Marruecos,West Ham United
+214,Pivote,Teun Koopmeiners,25,3500,Países Bajos,Atalanta de Bérgamo
+215,Defensa central,Robin Le Normand,27,3500,España,Real Sociedad
+216,Lateral izquierdo,Pervis Estupiñán,25,3500,Ecuador,Brighton & Hove Albion
+217,Delantero centro,Tammy Abraham,26,3500,Inglaterra,AS Roma
+218,Extremo derecho,Donyell Malen,24,3500,Países Bajos,Borussia Dortmund
+219,Lateral izquierdo,Ben Chilwell,26,3500,Inglaterra,Chelsea FC
+220,Pivote,Tomas Soucek,28,3500,República Checa,West Ham United
+221,Mediocentro,Marcos Llorente,28,3500,España,Atlético de Madrid
+222,Portero,Gregor Kobel,25,3500,Suiza,Borussia Dortmund
+223,Delantero centro,Ivan Toney,27,3500,Inglaterra,Brentford FC
+224,Defensa central,José María Giménez,28,3500,Uruguay,Atlético de Madrid
