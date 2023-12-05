@@ -190,5 +190,36 @@ def act_graficaJugador_posicion(selected_posicion):
     figure = px.line(filtered_df, x="nombre", y="valor_mercado_millones",
                           title=f"Valor en el mercado por posicion").update_layout(yaxis_title="Valor en el mercado")
     return figure
+@app.callback(
+    Output("grafica-equipos", "figure"),
+    [Input("dropdown-equipos", "value")]
+)
+def actualizar_grafica_equipos(selected_equipo):
+    eq = cnst.CONSULTA_EQUIPOS
+    val = cnst.CONSULTA_VALORES
+    df_jugador, df_valores = conexion.obtener_datos(eq, val)
+    df_d2 = pd.merge(df_jugador, df_valores)
+    if not selected_equipo:
+        filtered_df = df_d2
+    else:
+        filtered_df = df_d2[df_d2["equipo"] == selected_equipo]
+    figure = px.histogram(filtered_df, x="equipo", title="Jugadores por Equipo").update_layout(yaxis_title="Cantidad de jugadores")
+    return figure
+
+@app.callback(
+    Output("grafica-valor-jugadores", "figure"),
+    [Input("dropdown-nombres-valor-jugadores", "value")]
+)
+def actualizar_grafica_valor_jugadores(selected_valor):
+    eq = cnst.CONSULTA_EQUIPOS
+    val = cnst.CONSULTA_VALORES
+    df_jugador, df_valores = conexion.obtener_datos(eq, val)
+    df_d2 = pd.merge(df_jugador, df_valores)
+    if not selected_valor:
+        filtered_df = df_d2
+    else:
+        filtered_df = df_d2[df_d2["valor_mercado_millones"] == selected_valor]
+    figure = px.line(filtered_df, x="nombre", y="valor_mercado_millones", title="Valor de los jugadores").update_layout(yaxis_title="Valor en el mercado")
+    return figure
 if __name__ == "__main__":
     app.run_server(debug=True)
