@@ -1,0 +1,13 @@
+JUGADORES="jugadores.csv"
+CAMPOS=["Posicion", "Nombre", "Edad", "Valor de mercado", "Nacionalidad", "Equipo"]
+HOST = "localhost"
+USER = "root"
+PASSWORD = "12345"
+DATABASE = "jugadores"
+LINK="https://www.transfermarkt.es/spieler-statistik/wertvollstespieler/marktwertetop"
+INSERT_JUGADOR = "INSERT INTO jugador (nombre, edad, posicion, nacionalidad) VALUES (%s, %s, %s, %s)"
+INSERT_EQUIPOS= "INSERT INTO equipos (nombre, equipo) VALUES (%s, %s)"
+INSERT_VALORES = "INSERT INTO valores (nombre, valor_mercado_millones) VALUES (%s, %s)"
+CONSULTA_JUGADOR="select * from jugador"
+CONSULTA_EQUIPOS="select * from equipos"
+CONSULTA_VALORES="select * from valores"
