@@ -48,6 +48,9 @@ with conexion.cursor() as cursor:
                     "Nacionalidad": nacionalidad_texto,
                     "Equipo": equipo_texto
                 })
+                insert_jugador = cnst.INSERT_JUGADOR
+                valores_jugador = (nombre_texto, edad_texto, posicion_texto, nacionalidad_texto)
+                cursor.execute(insert_jugador, valores_jugador)
                 ###Parte uno
 
             if page < 8:
