@@ -27,3 +27,15 @@ try:
             valor_texto = elementos[8].text
             valor_texto = valor_texto.replace(',', '')
             valor_texto = valor_texto.replace(' mill. €', '')
+            img_nac = elementos[6].find_element(By.TAG_NAME, "img")
+            nacionalidad_texto = img_nac.get_attribute("alt")
+            img_equipo = elementos[7].find_element(By.TAG_NAME, "img")
+            equipo_texto = img_equipo.get_attribute("title")
+            datos.append({
+                "Posicion": posicion_texto,
+                "Nombre": nombre_texto,
+                "Edad": edad_texto,
+                "Valor de mercado": valor_texto,
+                "Nacionalidad": nacionalidad_texto,
+                "Equipo": equipo_texto
+            })
