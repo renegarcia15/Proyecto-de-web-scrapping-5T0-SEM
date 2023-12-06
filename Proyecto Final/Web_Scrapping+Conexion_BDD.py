@@ -52,8 +52,6 @@ with conexion.cursor() as cursor:
                 insert_jugador = cnst.INSERT_JUGADOR
                 valores_jugador = (nombre_texto, edad_texto, posicion_texto, nacionalidad_texto)
                 cursor.execute(insert_jugador, valores_jugador)
-                ###Parte uno
-
                 insert_equipos = cnst.INSERT_EQUIPOS
                 valores_equipos = (nombre_texto, equipo_texto)
                 cursor.execute(insert_equipos, valores_equipos)
@@ -65,15 +63,12 @@ with conexion.cursor() as cursor:
                 next_page_button = navegador.find_element(By.XPATH, "//a[@title='A la página siguiente']")
                 next_page_button.click()
                 time.sleep(5)
-        ##PARTE DOS
         conexion.commit()
     except Exception as e:
-        ##PARTE TRES
         conexion.rollback()
 
         print(f"Error: {e}")
     finally:
-        ##PARTE CUATRO
         conexion.close()
 
         navegador.quit()
@@ -83,5 +78,4 @@ data = pd.DataFrame(datos)
 jugadores = data.to_csv(cnst.JUGADORES)
 
 print(f"Los datos se han guardado en {cnst.JUGADORES}")
-#PARTE CINCO
 print("Los datos se han guardado en la base de datos.")
