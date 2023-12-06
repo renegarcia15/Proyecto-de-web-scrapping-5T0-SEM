@@ -25,6 +25,7 @@ with conexion.cursor() as cursor:
     time.sleep(5)
     datos = []
 
+
     try:
         for page in range(9):
             filas = navegador.find_elements(By.XPATH, "//table[@class='items']/tbody/tr")
