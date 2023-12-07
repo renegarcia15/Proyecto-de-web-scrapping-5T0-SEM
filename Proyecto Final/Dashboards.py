@@ -47,7 +47,7 @@ def dashboard01():
     jugadores_posicion = px.bar(df, x="nombre", y="valor_mercado_millones",
                                         title="Valor de los jugadores por su posicion",color="nombre")
     return dbc.Container([
-        dbc.Row([html.P("Objetivos: Mostrar el número de jugadores por país, equipo y cuales son los de mayor precio en el mercado")]),
+        dbc.Row([html.P("Objetivos: Mostrar el número de jugadores por país, los jugadores mas caros y baratos (Top 10) y cuales son los de mayor precio en el mercado en base a su posicion")]),
         dbc.Row([
             dbc.Col([
                 dcc.Dropdown(
@@ -105,7 +105,7 @@ def dashboard02():
                      title="Top 5 Equipos con el peor valor en el mercado",color="equipo")
     return dbc.Container([
         dbc.Row([html.P(
-        "Objetivos: Mostrar los equipos con más jugadores, la cantidad de jugadores por equipo y qué equipo tiene a más jugadores en el top 50")]),
+        "Objetivos: Mostrar la cantidad de jugadores por equipo, equipos con el mejor valor en el mercado (Top 10) y a los equipos con el peor valor en el mercado (Top 5)")]),
         dbc.Row([
             dbc.Col([
                 dcc.Dropdown(
