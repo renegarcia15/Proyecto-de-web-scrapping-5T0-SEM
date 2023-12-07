@@ -97,7 +97,7 @@ def dashboard02():
     df_d2 = pd.merge(df_jugador, df_valores)
     mejores_equipos = df_d2.groupby("equipo")["valor_mercado_millones"].sum().nlargest(10).reset_index()
     graf_mejores = px.bar(mejores_equipos, x="valor_mercado_millones", y="equipo",color="equipo",
-                          title="Top 10 Equipos con el mejor valor del mercado").update_layout(yaxis_title="Valor en el mercado")
+                          title="Top 10 Equipos con el mejor valor del mercado").update_layout(yaxis_title="Equipos")
     peores_equipos = df_d2.groupby("equipo")["valor_mercado_millones"].sum().nsmallest(5).reset_index()
 
 
