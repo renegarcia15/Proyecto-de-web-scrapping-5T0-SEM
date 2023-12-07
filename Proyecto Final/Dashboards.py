@@ -36,7 +36,7 @@ conexion = Conexion(
     cnst.DATABASE
 )
 
-app = Dash(__name__, external_stylesheets=[dbc.themes.BOOTSTRAP], suppress_callback_exceptions=True)
+app = Dash(__name__, external_stylesheets=[dbc.themes.LUX], suppress_callback_exceptions=True)
 
 
 def dashboard01():
@@ -54,7 +54,7 @@ def dashboard01():
                     id="dropdown-paises",
                     options=[{"label": pais, "value": pais} for pais in df["nacionalidad"].unique()],
                     value=None,
-                    multi=False,
+                    multi=True,
                     placeholder="Selecciona país"
                 ),
             ], width=6),
@@ -112,7 +112,7 @@ def dashboard02():
                 id="dropdown-equipos",
                 options=[{"label": equipo, "value": equipo} for equipo in df_d2["equipo"].unique()],
                 value=None,
-                multi=False,
+                multi=True,
                 placeholder="Selecciona equipo"
             ),
         ], width=6),
@@ -149,7 +149,7 @@ def act_graficaPais(selected_pais):
     if not selected_pais:
         filtered_df = df
     else:
-        filtered_df = df[df["nacionalidad"] == selected_pais]
+        filtered_df = df[df["nacionalidad"].isin(selected_pais)]
     figure = px.bar(filtered_df, x="nacionalidad", title="Jugadores por País").update_layout(
         yaxis_title="Cantidad de jugadores")
     figure.update_traces(marker_color = 'green', marker_line_color = 'black',
@@ -177,7 +177,7 @@ def act_graficaJugador(selected_tipo):
     Output("grafica-jugadores-posicion", "figure"),
     [Input("dropdown-posiciones", "value")]
 )
-def act_graficaJugador_posicion(selected_posicion):
+def act_grafica_posicion(selected_posicion):
     query = cnst.CONSULTA_JUGADOR
     query2 = cnst.CONSULTA_VALORES
     df_jugador, df_valores = conexion.obtener_datos(query, query2)
@@ -194,7 +194,7 @@ def act_graficaJugador_posicion(selected_posicion):
     Output("grafica-equipos", "figure"),
     [Input("dropdown-equipos", "value")]
 )
-def actualizar_grafica_equipos(selected_equipo):
+def act_grafica_equipos(selected_equipo):
     eq = cnst.CONSULTA_EQUIPOS
     val = cnst.CONSULTA_VALORES
     df_jugador, df_valores = conexion.obtener_datos(eq, val)
@@ -202,7 +202,7 @@ def actualizar_grafica_equipos(selected_equipo):
     if not selected_equipo:
         filtered_df = df_d2
     else:
-        filtered_df = df_d2[df_d2["equipo"] == selected_equipo]
+        filtered_df = df_d2[df_d2["equipo"].isin(selected_equipo)]
     figure = px.histogram(filtered_df, x="equipo",color="equipo",color_discrete_map = {'G1': 'green', 'G2': 'orange'}, title="Jugadores por Equipo").update_layout(yaxis_title="Cantidad de jugadores")
     return figure
 
@@ -210,7 +210,7 @@ def actualizar_grafica_equipos(selected_equipo):
     Output("grafica-valor-jugadores", "figure"),
     [Input("dropdown-nombres-valor-jugadores", "value")]
 )
-def actualizar_grafica_valor_jugadores(selected_valor):
+def act_grafica_valor(selected_valor):
     eq = cnst.CONSULTA_EQUIPOS
     val = cnst.CONSULTA_VALORES
     df_jugador, df_valores = conexion.obtener_datos(eq, val)
